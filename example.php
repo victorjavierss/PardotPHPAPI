@@ -5,7 +5,7 @@
     include_once 'lib/Pardot/LoginAPI.php';
     include_once 'lib/Pardot/ProspectPardot.php';
 
-    use \lib\PardotAPI\PardotAPI;
+    use \PardotAPI\PardotAPI;
 
     $validFields = array( 'id' => false, 'campaign_id' => true, 'salutation' => true, 'first_name' => true,
                     'last_name' => true, 'email' => true, 'password' => true, 'company'=> true,
