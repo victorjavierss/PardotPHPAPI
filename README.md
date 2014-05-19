@@ -92,4 +92,4 @@ if ( $prospect->save() ){
 
 PardotPHPAPI is licensed under the MIT License. See the LICENSE file for details.
 
-In the spirit of open source, use of this library for evil is discouraged.
+MIT © Addy Osmani, Sindre Sorhus, Pascal Hartig, Stephen Sawchuk.
