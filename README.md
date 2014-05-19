@@ -5,7 +5,7 @@ A PHP client for the Pardot REST API.
 **Requirements**
 
 
-PHP 5.3
+PHP 5.3.x
 
 ## Usage
  - [Get API Key](#get-api-key)
@@ -27,7 +27,7 @@ $entity = new PardotAPI('<username/email>','<password>','<userkey>');
 ```
 
 ### Get API Key
-For getting the api key you should authenticate through the REST service, but with this class you don't have to worry about it ;).
+For getting the api key you should authenticate through the REST service, but with this class you don't have to worry about it ;) (only don't forget to include the LoginAPI class).
 
 ### Load entity
 An entity is an `prospect`, `opportunity`, `users`, `visit` and a `visitor`, once you have the instance of PardotAPI set what entity you will be working for example:
