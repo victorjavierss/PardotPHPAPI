@@ -46,7 +46,7 @@ The PardotAPI class has constants declared for achieve this, the constats may us
  - `PardotAPI::ENTITY_VISIT`
  - `PardotAPI::ENTITY_VISITOR`
 
-This entities may be loaded by using the `loadById` or `loadByEmail` methods.
+This entities may be loaded by using the `loadById($id)` or `loadByEmail($email)` methods.
 
 Example:
 ```php
@@ -60,8 +60,8 @@ $prospect->loadById('1254789516');
 **Arguments**
 
 
- - The `loadById` method recieves only the `$id` of the prospect/opportunity/users/visit/visitor.
- - The `loadByEmail` method recieves only the `$email` of the prospect/opportunity/users.
+ - The `loadById($id)` method recieves only the `id` of the prospect/opportunity/users/visit/visitor.
+ - The `loadByEmail($email)` method recieves only the `email` of the prospect/opportunity/users.
  
 
 ### Create/Update entity
@@ -75,7 +75,7 @@ $prospect->last_name  = 'Doe';
 $prospect->company    = 'Example, Inc.';
 ```
 
-Then after assign the values for the entity execute `save` method, if it was successful it will return `TRUE`
+Then after assign the values for the entity execute `save()` method, if it was successful it will return `TRUE`
 
 ```php
 <?php
