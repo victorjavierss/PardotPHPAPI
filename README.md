@@ -11,6 +11,7 @@ PHP 5.3.x
  - [Get API Key](#get-api-key)
  - [Load entity](#load-entity)
  - [Create/Update entity](#create-update-entity)
+ - [Full example](#full-example)
 
 ### Authentication
 The first thing you'll want to do is include the PardotAPI class and create a new instance of the client.
@@ -30,7 +31,7 @@ $entity = new PardotAPI('<username/email>','<password>','<userkey>');
 For getting the api key you should authenticate through the REST service, but with this class you don't have to worry about it ;) (only don't forget to include the LoginAPI class).
 
 ### Load entity
-An entity is an `prospect`, `opportunity`, `users`, `visit` and a `visitor`, once you have the instance of PardotAPI set what entity you will be working for example:
+An entity is a `prospect`, `opportunity`, `users`, `visit` and a `visitor`, once you have the instance of PardotAPI set what entity you will be working, for example:
 
 ```php
 <?php
@@ -47,13 +48,40 @@ The PardotAPI class has constants declared for achieve this, the constats may us
 
 This entities may be loaded by using the `loadById` or `loadByEmail` methods.
 
+Example:
+```php
+<?php
+// initialization of PardotAPI omitted
+$prospect->loadByEmail('prospect@example.com');
+// OR
+$prospect->loadById('1254789516');
+```
 
 **Arguments**
 
 
  - The `loadById` method recieves only the `$id` of the prospect/opportunity/users/visit/visitor.
  - The `loadByEmail` method recieves only the `$email` of the prospect/opportunity/users.
+ 
 
+### Create/Update entity
+Assign values for the PardotAPI instance like:
+```php
+<?php
+// initialization of PardotAPI omitted
+$prospect->email = 'my@example.com';
+$prospect->first_name = 'John';
+$prospect->last_name  = 'Doe';
+$prospect->company    = 'Example, Inc.';
+```
+
+Then after assign the values for the entity execute `save` method, if it was successful it will return `TRUE`
+
+```php
+<?php
+// initialization of PardotAPI omitted
+$prospect->save();
+```
 
 
 ### Full example
@@ -85,6 +113,8 @@ echo $prospect->first_name . ' ' . $prospect->last_name . "({$prospect->job_titl
 ```
 
 **Extending PardotAPI**
+
+
 You may extend the PardotAPI for specific entity like below: 
 
 ```php
