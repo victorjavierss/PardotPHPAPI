@@ -37,11 +37,18 @@ $prospect->setEntity( PardotAPI::ENTITY_PROSPECT );
 
 The PardotAPI class has constants declared for achieve this, the constats may used as follows:
 
-`PardotAPI::ENTITY_PROSPECT`
-`PardotAPI::ENTITY_OPPORTUNITY`
-`PardotAPI::ENTITY_USERS`
-`PardotAPI::ENTITY_VISIT`
-`PardotAPI::ENTITY_VISITOR`
+ - `PardotAPI::ENTITY_PROSPECT`
+ - `PardotAPI::ENTITY_OPPORTUNITY`
+ - `PardotAPI::ENTITY_USERS`
+ - `PardotAPI::ENTITY_VISIT`
+ - `PardotAPI::ENTITY_VISITOR`
+
+This entities may be loaded by using the `loadById` or `loadByEmail` methods.
+
+
+** Arguments **
+The `loadById` method recieves only the `$id` of the prospect/opportunity/users/visit/visitor.
+The `loadByEmail` method recieves only the `$email` of the prospect/opportunity/users.
 
 
 
