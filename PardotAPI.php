@@ -6,7 +6,7 @@
  * Time: 3:58 PM
  */
 
-namespace lib\PardotAPI;
+namespace PardotAPI;
 
 class PardotAPI {
 

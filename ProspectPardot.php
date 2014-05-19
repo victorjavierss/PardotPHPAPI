@@ -6,7 +6,7 @@
  * Time: 3:59 PM
  */
 
-namespace lib\PardotAPI;
+namespace PardotAPI;
 
 class ProspectPardot extends PardotAPI{
 
@@ -51,7 +51,7 @@ class ProspectPardot extends PardotAPI{
 
 
     /**
-     * @var string Entity we want to query in Pardot®
+     * @var string Entity we want to query in Pardot
      */
     protected $_pardotEntity = 'prospect';
 } 

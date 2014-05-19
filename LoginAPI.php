@@ -1,15 +1,12 @@
 <?php
 /**
- * Created by PhpStorm.
+ * 
  * User: vjavier
  * Date: 5/16/14
  * Time: 3:59 PM
  */
 
-namespace lib\PardotAPI;
-
-use lib\PardotAPI\PardotAPI;
-
+namespace PardotAPI;
 
 class LoginAPI extends PardotAPI{
 
