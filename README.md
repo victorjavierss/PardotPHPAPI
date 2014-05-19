@@ -112,9 +112,7 @@ $prospect->loadById('<ID>');
 echo $prospect->first_name . ' ' . $prospect->last_name . "({$prospect->job_title})" ;
 ```
 
-**Extending PardotAPI**
-
-
+###Extending PardotAPI
 You may extend the PardotAPI for specific entity like below: 
 
 ```php
