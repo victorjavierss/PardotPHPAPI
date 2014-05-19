@@ -2,7 +2,7 @@
 
 A PHP client for the Pardot REST API.
 
-** Requirements **
+**Requirements**
 PHP 5.3
 
 ## Usage
@@ -46,7 +46,7 @@ The PardotAPI class has constants declared for achieve this, the constats may us
 This entities may be loaded by using the `loadById` or `loadByEmail` methods.
 
 
-** Arguments **
+**Arguments**
 The `loadById` method recieves only the `$id` of the prospect/opportunity/users/visit/visitor.
 The `loadByEmail` method recieves only the `$email` of the prospect/opportunity/users.
 
