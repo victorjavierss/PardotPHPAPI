@@ -51,8 +51,8 @@ This entities may be loaded by using the `loadById` or `loadByEmail` methods.
 **Arguments**
 
 
-The `loadById` method recieves only the `$id` of the prospect/opportunity/users/visit/visitor.
-The `loadByEmail` method recieves only the `$email` of the prospect/opportunity/users.
+ - The `loadById` method recieves only the `$id` of the prospect/opportunity/users/visit/visitor.
+ - The `loadByEmail` method recieves only the `$email` of the prospect/opportunity/users.
 
 
 
@@ -84,7 +84,7 @@ $prospect->loadById('<ID>');
 echo $prospect->first_name . ' ' . $prospect->last_name . "({$prospect->job_title})" ;
 ```
 
-** Extending PardotAPI **
+**Extending PardotAPI**
 You may extend the PardotAPI for specific entity like below: 
 
 ```php
