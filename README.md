@@ -83,7 +83,7 @@ Then after assign the values for the entity execute `save()` method, if it was s
 $prospect->save();
 ```
 
-**NOTE**  If you previously load an entity the this update the current loaded record otherwise it will try to create the new entity.
+**NOTE**  If you previously loaded an entity the this update the current loaded record otherwise it will try to create the new entity.
 
 ### Full example
 ```php
