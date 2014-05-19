@@ -1,12 +1,51 @@
 # PardotPHPAPI
 
-PardotPHPAPI is a php class that makes easier the integration of Pardot® in your website.
-It is a wrapper for common functions such as read, create and update.
+A PHP client for the Pardot REST API.
 
-## Requirements
+** Requirements **
 PHP 5.3
 
 ## Usage
+ - [Get API Key](#get-api-key)
+ - [Load entity](#load-entity)
+ - [Create/Update entity](#create-update-entity)
+
+### Authentication
+The first thing you'll want to do is include the PardotAPI class and create a new instance of the client.
+
+You will need your username, password and user key. These can be found in the account settings when logged into [pi.pardot.com](http://pi.pardot.com/).
+
+This will be achieved like this:
+
+```php
+<?php
+include_once 'lib/Pardot/PardotAPI.php';
+use \PardotAPI\PardotAPI;
+$entity = new PardotAPI('<username/email>','<password>','<userkey>');
+```
+
+### Get API Key
+For getting the api key you should authenticate through the REST service, but with this class you don't have to worry about it ;).
+
+### Load entity
+An entity is an `prospect`, `opportunity`, `users`, `visit` and a `visitor`, once you have the instance of PardotAPI set what entity you will be working for example:
+
+```php
+<?php
+$prospect->setEntity( PardotAPI::ENTITY_PROSPECT );
+```
+
+The PardotAPI class has constants declared for achieve this, the constats may used as follows:
+
+`PardotAPI::ENTITY_PROSPECT`
+`PardotAPI::ENTITY_OPPORTUNITY`
+`PardotAPI::ENTITY_USERS`
+`PardotAPI::ENTITY_VISIT`
+`PardotAPI::ENTITY_VISITOR`
+
+
+
+### Full example
 ```php
 <?php
 include_once 'lib/Pardot/PardotAPI.php';
@@ -34,7 +73,7 @@ $prospect->loadById('<ID>');
 echo $prospect->first_name . ' ' . $prospect->last_name . "({$prospect->job_title})" ;
 ```
 
-### Extending PardotAPI
+** Extending PardotAPI **
 You may extend the PardotAPI for specific entity like below: 
 
 ```php
