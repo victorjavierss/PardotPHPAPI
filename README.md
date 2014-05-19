@@ -3,6 +3,8 @@
 A PHP client for the Pardot REST API.
 
 **Requirements**
+
+
 PHP 5.3
 
 ## Usage
@@ -47,6 +49,8 @@ This entities may be loaded by using the `loadById` or `loadByEmail` methods.
 
 
 **Arguments**
+
+
 The `loadById` method recieves only the `$id` of the prospect/opportunity/users/visit/visitor.
 The `loadByEmail` method recieves only the `$email` of the prospect/opportunity/users.
 
