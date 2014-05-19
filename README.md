@@ -10,7 +10,7 @@ PHP 5.3.x
 ## Usage
  - [Get API Key](#get-api-key)
  - [Load entity](#load-entity)
- - [Create/Update entity](#create-update-entity)
+ - [Create/Update entity](#createupdate-entity)
  - [Full example](#full-example)
 
 ### Authentication
